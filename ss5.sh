@@ -7,3 +7,7 @@ cd ss5-3.8.9/
 make
 make install
 chmod a+x /etc/init.d/ss5
+firewall-cmd --permanent --add-port=1080/tcp
+firewall-cmd --reload
+service firewalld restart
+service ss5 restart
