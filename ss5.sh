@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 yum install -y gcc openldap-devel pam-devel openssl-devel net-tools vim
 wget http://jaist.dl.sourceforge.net/project/ss5/ss5/3.8.9-8/ss5-3.8.9-8.tar.gz
 tar -vzx -f ss5-3.8.9-8.tar.gz
