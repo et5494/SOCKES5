@@ -1,4 +1,9 @@
 #!/bin/sh
+if [ ! -d "/var/run/ss5" ];then
+  mkdir /var/run/ss5
+else
+  echo "文件夹已经存在"
+fi
 iptables -t mangle -A OUTPUT -m owner --uid-owner 1000 -j MARK --set-mark 1000
 iptables -t nat -A POSTROUTING -m mark --mark 1000 -j SNAT --to-source 149.28.29.63
 iptables -t mangle -A OUTPUT -m owner --uid-owner 1001 -j MARK --set-mark 1001
