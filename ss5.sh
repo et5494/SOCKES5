@@ -16,3 +16,6 @@ wget https://raw.githubusercontent.com/et5494/SOCKES5/main/ss5.conf
 chmod a+x ss5.conf
 wget https://raw.githubusercontent.com/et5494/SOCKES5/main/ss5.passwd
 chmod a+x ss5.conf
+useradd lo1
+useradd lo2
+useradd lo3
