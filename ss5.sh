@@ -10,3 +10,9 @@ chmod a+x /etc/init.d/ss5
 firewall-cmd --permanent --add-port=1080/tcp
 firewall-cmd --reload
 service firewalld restart
+cd /etc/opt/ss5
+rm -r -f ss5.conf
+wget https://raw.githubusercontent.com/et5494/SOCKES5/main/ss5.conf
+chmod a+x ss5.conf
+wget https://raw.githubusercontent.com/et5494/SOCKES5/main/ss5.passwd
+chmod a+x ss5.conf
